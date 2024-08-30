@@ -15,8 +15,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       '@dmitryrechkin/message-core':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.0.1
+        version: 1.0.1
       '@dmitryrechkin/request-sender-core':
         specifier: ^1.0.0
         version: 1.0.2
@@ -80,8 +80,8 @@ packages:
   '@dmitryrechkin/foundation-core@1.0.0':
     resolution: {integrity: sha512-VAmiu21vzpaUMn8WLTvcuakvc677xCfp4uKLG4sDhH4XQFGGfhgKdmxCvQY5dUlzBDi6jmsGvCQYb4aF1uDgvg==}
 
-  '@dmitryrechkin/message-core@1.0.0':
-    resolution: {integrity: sha512-U0Z+VkTqP7d9c44tZzYV8cdZ+2Hjp+Dpx2MbACFaPU6owRmJhw0OiZTfqAhsrpvYbivJTJkeYkRJcM475Q8qwA==}
+  '@dmitryrechkin/message-core@1.0.1':
+    resolution: {integrity: sha512-oXv93D+S+k0eyoNdAuGydafJfvIFVYENONvdws0fP9K2ZD1OnN1olDyZTlguzeLJtwbSfmGZx/ghcPKHFSoOkg==}
 
   '@dmitryrechkin/request-sender-core@1.0.2':
     resolution: {integrity: sha512-W7PX2/mQGrdBGcRkqQL5iveFRuRNq1ujxTt0bvzQnOtMXJOVGIIuJcpk1ShbkpxY7M+aAu/7szwW0rW9IbOw1w==}
@@ -1016,7 +1016,7 @@ snapshots:
     dependencies:
       zod: 3.23.8
 
-  '@dmitryrechkin/message-core@1.0.0':
+  '@dmitryrechkin/message-core@1.0.1':
     dependencies:
       '@dmitryrechkin/foundation-core': 1.0.0
       zod: 3.23.8

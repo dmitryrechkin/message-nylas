@@ -48,7 +48,7 @@ export class SendMessageAction implements SendMessageActionInterface
 		const response = await this.requestSender.send(path, {method: 'POST', body: JSON.stringify(nylasMessage)});
 		if (!response.ok)
 		{
-			console.error(`Failed to create event: ${response.statusText}`);
+			console.error(`Failed to send message: ${JSON.stringify(response)}`);
 			return ResponseHelper.createErrorResponse(EnumErrorCode.REQUEST_FAILED, response.statusText);
 		}
 
