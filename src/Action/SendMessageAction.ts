@@ -33,7 +33,16 @@ export class SendMessageAction implements SendMessageActionInterface
 	 */
 	public async execute(message: TypeEmailMessage): Promise<TypeResponse<TypeEmailMessage>>
 	{
-		console.log('Sending email message:', message);
+		// log the message without an attachment content, because it can be too large
+		console.log('Sending email message:', JSON.stringify(message, (key, value) => {
+			if (key === 'attachments') {
+				return value.map((attachment: { [x: string]: any; content: any; }) => {
+					const { content, ...rest } = attachment;
+					return rest;
+				});
+			}
+			return value;
+		}, 2));
 
 		// Transform the message to Nylas format
 		const nylasMessage = this.toNylasTransformer.transform(message);
